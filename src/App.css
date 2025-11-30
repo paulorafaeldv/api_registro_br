@@ -1,0 +1,102 @@
+/* ======== CONTAINER GERAL ======== */
+.reg-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #121212;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #b8383855;
+  color: #eaeaea;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  text-align: center;
+}
+
+.pagina-container {
+  text-align: center;      /* CENTRALIZA TODOS OS TEXTOS */
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Título */
+.reg-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #4db8ff;
+}
+
+/* ======== FORM ======== */
+.reg-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.reg-input {
+  flex-grow: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #4db8ff;
+  background: #1e1e1e;
+  color: white;
+  font-size: 16px;
+}
+
+.reg-input::placeholder {
+  color: #aaaaaa;
+}
+
+/* Botão */
+.reg-button {
+  padding: 12px 18px;
+  background: #4db8ff;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.reg-button:hover {
+  background: #80d4ff;
+}
+
+.reg-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ======== ERRO ======== */
+.reg-error {
+  background: #d9534f;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* ======== RESULTADO ======== */
+.reg-result {
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  border: 2px solid #4db8ff;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.reg-result h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #4db8ff;
+}
+
+.reg-result strong {
+  color: #ffffff;
+}
+
+body {
+  background-color: #ca3a3a;
+}
