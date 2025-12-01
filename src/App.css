@@ -3,15 +3,16 @@
   max-width: 600px;
   margin: 40px auto;
   padding: 30px;
-  background: #121212;
+  background: #fcfafa;
   border-radius: 12px;
-  box-shadow: 0 0 20px #b8383855;
-  color: #eaeaea;
+  border: 100px black;
+  color: #ff0000;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   text-align: center;
 }
 
 .pagina-container {
+  color: rgb(0, 132, 255);
   text-align: center;      /* CENTRALIZA TODOS OS TEXTOS */
   width: 100%;
   margin-top: 30px;
@@ -37,7 +38,7 @@
   padding: 12px;
   border-radius: 6px;
   border: 1px solid #4db8ff;
-  background: #1e1e1e;
+  background: #ffffff;
   color: white;
   font-size: 16px;
 }
@@ -97,6 +98,11 @@
   color: #ffffff;
 }
 
+<<<<<<< HEAD
 body {
   background-color: #ca3a3a;
+=======
+.reg-initial {
+  color: black;
+>>>>>>> e37ccd630e64a426a16e3e95235115e5dd60c475
 }

@@ -1,3 +1,44 @@
+/* Seu App.css ou RegistroList.css */
+
+/* Definição da animação keyframe */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0; /* Começa totalmente transparente */
+        transform: translateY(20px); /* Opcional: começa 20px abaixo e desliza para cima */
+    }
+    to {
+        opacity: 1; /* Termina totalmente visível */
+        transform: translateY(0); /* Posição final */
+    }
+}
+
+/* Aplica a animação à classe 'fade-in' */
+.fade-in {
+    animation: fadeInAnimation 1s ease-out forwards; 
+    opacity: 0; /* Garante que o elemento comece invisível antes da animação */
+}
+
+.result-box {
+    background: #1a1a1a; /* Fundo escuro */
+    border-radius: 10px;
+    border: 2px solid #4db8ff; /* Borda azul */
+    color: #fff; /* Texto branco padrão */
+    text-align: left;
+    padding: 20px; /* Mais espaço interno */
+    margin-top: 20px; /* Espaçamento com o elemento acima */
+}
+
+/* Ajustes de cor para texto dentro do result-box, se necessário */
+.result-box h3 {
+    color: #4db8ff; /* Exemplo de cor para o título do domínio */
+    margin-bottom: 15px;
+}
+.result-box strong {
+    color: #e0e0e0; /* Cor para labels como "Status:" */
+}
+.result-box .text-success { color: #28a745 !important; } /* Verde para "Livre" */
+.result-box .text-danger { color: #dc3545 !important; } /* Vermelho para "Ocupado" */
+
 .header-blur {
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.45);

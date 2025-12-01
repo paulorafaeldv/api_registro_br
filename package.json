@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@popperjs/core": "^2.11.8",
+>>>>>>> e37ccd630e64a426a16e3e95235115e5dd60c475
     "bootstrap": "^5.3.8",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"

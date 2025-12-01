@@ -71,7 +71,7 @@ function RegistroList() {
 
         {/* RESULTADO */}
         {result && !loading && (
-          <div className="result-box mt-4 p-3">
+          <div className="result-box mt-4 p-3 fade-in">
             <h3 className="title-highlight">Domínio: {result.domain}</h3>
 
             <p>
