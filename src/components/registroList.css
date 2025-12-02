@@ -26,6 +26,8 @@
     text-align: left;
     padding: 20px; /* Mais espaço interno */
     margin-top: 20px; /* Espaçamento com o elemento acima */
+    text-align: center;
+    font-size: 50px;
 }
 
 /* Ajustes de cor para texto dentro do result-box, se necessário */
@@ -87,14 +89,4 @@
 .btn-custom {
   background: #4db8ff !important;
   color: black !important;
-}
-
-/* Box de resultado */
-.result-box {
-    background: #1a1a1a;
-    border-radius: 10px;
-    border: 2px solid #4db8ff;
-    text-align: center;
-    font-size: 50px;
-    
 }
