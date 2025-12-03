@@ -19,27 +19,27 @@
 }
 
 .result-box {
-    background: #1a1a1a; /* Fundo escuro */
+    background: #1a1a1a; 
     border-radius: 10px;
-    border: 2px solid #4db8ff; /* Borda azul */
-    color: #fff; /* Texto branco padrão */
+    border: 2px solid #4db8ff; 
+    color: #fff; 
     text-align: left;
-    padding: 20px; /* Mais espaço interno */
-    margin-top: 20px; /* Espaçamento com o elemento acima */
+    padding: 20px; 
+    margin-top: 20px;
     text-align: center;
     font-size: 50px;
 }
 
-/* Ajustes de cor para texto dentro do result-box, se necessário */
 .result-box h3 {
     color: #4db8ff; /* Exemplo de cor para o título do domínio */
     margin-bottom: 15px;
 }
 .result-box strong {
-    color: #e0e0e0; /* Cor para labels como "Status:" */
+    color: #e0e0e0;
 }
-.result-box .text-success { color: #28a745 !important; } /* Verde para "Livre" */
-.result-box .text-danger { color: #dc3545 !important; } /* Vermelho para "Ocupado" */
+
+.result-box .text-success { color: #28a745 !important; }
+.result-box .text-danger { color: #dc3545 !important; } 
 
 .header-blur {
   backdrop-filter: blur(10px);
@@ -53,7 +53,7 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Fundo da página */
+
 .page-background {
   background-image: url('/sl_031420_28950_10.jpg');
   background-size: cover;
@@ -64,7 +64,7 @@
   text-align: center;
 }
 
-/* Card principal */
+
 .main-card {
   max-width: 600px;
   background: #533c3c;
@@ -77,7 +77,7 @@
   color: #4db8ff;
 }
 
-/* Input */
+
 .input-custom {
   background: #1e1e1e !important;
   color: white !important;
@@ -85,7 +85,7 @@
   
 }
 
-/* Botão */
+
 .btn-custom {
   background: #4db8ff !important;
   color: black !important;

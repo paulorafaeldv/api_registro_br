@@ -13,7 +13,7 @@ function RegistroList() {
     e.preventDefault();
 
     if (!inputDomain.trim()) {
-      setError("Por favor, digite um nome de domínio completo (ex: site.com.br).");
+      setError("Por favor, digite o nome de domínio que deseja.");
       setResult(null);
       return;
     }
@@ -29,9 +29,8 @@ function RegistroList() {
 
       const response = await fetch(endpoint);
 
-      // 🛑 CORREÇÃO 1: Adiciona a verificação de status HTTP (resolve falhas por 404, acentos, etc.)
       if (!response.ok) {
-        let errorMsg = `Erro ${response.status}: Falha ao buscar domínio.`;
+        let errorMsg;
         try {
           const errorData = await response.json();
           if (errorData.message) {
@@ -40,7 +39,6 @@ function RegistroList() {
             errorMsg = errorData.error;
           }
         } catch {
-          // Se não for JSON, usamos a mensagem padrão de status
         }
         throw new Error(errorMsg);
       }
@@ -48,7 +46,6 @@ function RegistroList() {
       const data = await response.json();
       setResult(data);
     } catch (err) {
-      // 🛑 CORREÇÃO 2: Usa o valor da mensagem de erro, não a string literal
       setError(err.message); 
     } finally {
       setLoading(false);
@@ -59,12 +56,12 @@ function RegistroList() {
     <div className="page-background">
 
       <div className="header-blur">
-        <h2 className="fw-bold text-light">Informações sobre domínio:</h2>
+        <h1 className="fw-bold text-light">Conquiste seu domínio!</h1>
         <p className="text-light">
           Aplicação desenvolvida para a cadeira de Front-End Frameworks com consumo da API pública do Registro.br
         </p>
 
-        <h3 className="header-blur">Registre o domínio .br certo para você:</h3>
+        <h3 className="header-blur">Encontre o domínio .br certo para você:</h3>
 
         <form onSubmit={handleSearch} className="d-flex gap-2 mb-3">
           <input
@@ -82,7 +79,6 @@ function RegistroList() {
         </form>
 
         {error && (
-            // Aplica result-box, fade-in, e um estilo visual de erro (borda vermelha)
           <div className="result-box mt-4 p-3 fade-in" style={{ border: '2px solid #dc3545' }}> 
                 <h3 className="title-highlight" style={{ color: '#dc3545' }}>
                     <span role="img" aria-label="Atenção">⚠️</span> Erro na Busca
